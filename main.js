@@ -1,4 +1,5 @@
 let say = require('./say');
 
-say.sayHello();
-say.sayHi();
+//say.sayHello();
+//say.sayHi();
+say();
