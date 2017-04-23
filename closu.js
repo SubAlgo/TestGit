@@ -4,7 +4,11 @@ function prefix(pre) {
 	};
 }
 
-let fileHandler = prefix("Say");
+let say = prefix("Say:");
+let shout = prefix("Shout:");
+
 
 let fs = require('fs');
-fs.readFile('hello.txt', fileHandler);
+fs.readFile('hello.txt', say);
+fs.readFile('hello.txt' , shout);
+
