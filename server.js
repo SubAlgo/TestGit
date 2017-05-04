@@ -1,6 +1,10 @@
+//var connect = require('connect');
+//var app = connect();
+
 //[New Code]
-var connect = require('connect');
-var app = connect();
+var express = require('express');
+var app = express();
+
 
 var logger = function(req, res, next) {
 	console.log(req.method, req.url);
@@ -26,6 +30,8 @@ app.use('/goodbye', goodbyeWorld);
 app.listen(3000);
 console.log('Server running at http://localhost:3000');
 
+
+module.exports = app;
 //----------------
 
 /*

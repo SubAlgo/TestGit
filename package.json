@@ -4,7 +4,8 @@
   "description": "Lab_npm",
   "main": "app.js",
   "dependencies": {
-    "connect": "^3.6.1"
+    "connect": "^3.6.1",
+    "express": "^4.15.2"
   },
   "devDependencies": {},
   "scripts": {
