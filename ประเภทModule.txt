@@ -1,0 +1,17 @@
+ประเภทของ Module [NodeJS]
+https://www.youtube.com/watch?v=HAifMLGO678&index=9&list=PLtM3znnbMbVXD0fygCTsblC2sLZvSPY8g
+
+1.Core Module
+	- มีมากับ Node.js เลย
+	- fs, net, http, url
+2. File Module
+	- ระบุ path ไปยังไฟล์
+	var say = require('./say');
+	var say = require('./modules/say');
+	var say = require('/home/user/modules/say');
+3. Folder Module
+	main.js
+	var say = require(./modules/action'); //actionเป็น folder
+4. Third-party Module
+	ติดตั้ง npm
+	
