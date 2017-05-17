@@ -1,0 +1,36 @@
+Request Object
+
+var helloworld = function(req, res, next) {
+
+};
+
+req.query
+- query string พารามิเตอร์  //http://localhost/page1?key1=value1&key2=value2
+
+req.params
+- routing พารามิเตอร์ //http://localhost/param1/param2
+
+req.body
+- ส่วน body โดยได้มากับ middleware bodyParer()
+
+req.path, req.host, req.ip
+- request path ปัจจุบัน, ชื่อโฮสต์, ip ผู้ส่ง request
+---------------------------------------------------------------------
+
+res.status(code)
+- set HTTP status code
+
+res.set(field, [value])
+- set HTTP response header
+
+res.redirect([status], url)
+- redirect ไปยัง url ที่กำหนด และสามารถใส่ status code ได้
+
+res.send([body|status], [body])
+- ส่งค่ากลับ โดยเซ็ต Content-Type อัตโนมัติ
+
+res.json([body|status], [body])
+-เหมือน res.send โดยส่ง array หรือ Object
+
+res.render(view, [locals], callback)
+- เรนเดอร์ view และส่ง HTML response

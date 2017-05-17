@@ -1,0 +1,28 @@
+Application Object
+
+app.set(name, value)
+ -ตั้งค่า enviroment variable
+
+app.get(name)
+-รับค่า enviroment variable
+
+app.use([path], callback)
+-สร้าง middleware เพื่อ handle request กับ path ที่กำหนด
+
+app.get(path, callback)
+-สร้าง middleware เพื่อ handle GET request กับ path ที่กำหนด
+
+app.post(path, callback)
+-สราง middleware เพื่อ handle POST request กับ path ที่กำหนด
+
+app.put(path, callback)
+-สร้าง middleware เพื่อ handle PUT request กับ path ที่กำหนด
+
+app.delete(path, callback)
+-สร้าง middleware เพื่อ handle DELETE request กับ path ที่กำหนด
+
+app.route(path)
+	.get(callback)
+	.post(callback);
+
+//put กับ delete อาจมีปัญหาที่ browser บางตัวยังไม่รองรับ
