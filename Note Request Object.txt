@@ -5,16 +5,16 @@ var helloworld = function(req, res, next) {
 };
 
 req.query
-- query string พารามิเตอร์  //http://localhost/page1?key1=value1&key2=value2
+- query string เธเธฒเธฃเธฒเธกเธดเน€เธ•เธญเธฃเน  //http://localhost/page1?key1=value1&key2=value2
 
 req.params
-- routing พารามิเตอร์ //http://localhost/param1/param2
+- routing เธเธฒเธฃเธฒเธกเธดเน€เธ•เธญเธฃเน //http://localhost/param1/param2
 
 req.body
-- ส่วน body โดยได้มากับ middleware bodyParer()
+- เธชเนเธงเธ body เนเธ”เธขเนเธ”เนเธกเธฒเธเธฑเธ middleware bodyParer()
 
 req.path, req.host, req.ip
-- request path ปัจจุบัน, ชื่อโฮสต์, ip ผู้ส่ง request
+- request path เธเธฑเธเธเธธเธเธฑเธ, เธเธทเนเธญเนเธฎเธชเธ•เน, ip เธเธนเนเธชเนเธ request
 ---------------------------------------------------------------------
 
 res.status(code)
@@ -24,13 +24,13 @@ res.set(field, [value])
 - set HTTP response header
 
 res.redirect([status], url)
-- redirect ไปยัง url ที่กำหนด และสามารถใส่ status code ได้
+- redirect เนเธเธขเธฑเธ url เธ—เธตเนเธเธณเธซเธเธ” เนเธฅเธฐเธชเธฒเธกเธฒเธฃเธ–เนเธชเน status code เนเธ”เน
 
 res.send([body|status], [body])
-- ส่งค่ากลับ โดยเซ็ต Content-Type อัตโนมัติ
+- เธชเนเธเธเนเธฒเธเธฅเธฑเธ เนเธ”เธขเน€เธเนเธ• Content-Type เธญเธฑเธ•เนเธเธกเธฑเธ•เธด
 
 res.json([body|status], [body])
--เหมือน res.send โดยส่ง array หรือ Object
+-เน€เธซเธกเธทเธญเธ res.send เนเธ”เธขเธชเนเธ array เธซเธฃเธทเธญ Object
 
 res.render(view, [locals], callback)
-- เรนเดอร์ view และส่ง HTML response
+- เน€เธฃเธเน€เธ”เธญเธฃเน view เนเธฅเธฐเธชเนเธ HTML response
